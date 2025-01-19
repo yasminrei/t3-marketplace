@@ -1,4 +1,6 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { buttonVariants } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,6 +12,9 @@ export default function Home() {
           .
         </h1>
         <p className="mt-6 text-lg max-w-prose text-muted-foreground">Welcome to DigitalMarket. Explore our marketplace and discover the best digital assets.</p>
+        <div className="flex flex-col sm:flex-row gap-4 mt-6">
+          <Link href="/products" className={buttonVariants()}>Browse Trending</Link>
+        </div>
       </div>
     </MaxWidthWrapper>
 
