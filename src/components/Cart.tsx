@@ -25,7 +25,7 @@ const Cart = () => {
     <SheetContent className="flex w-full flex-col pr-0 sm:max-w-lg">
       <SheetHeader className="space-y-2.5 pr-6">
         <SheetTitle className="">
-          Cart (0)
+          Cart ({itemCount})
         </SheetTitle>
       </SheetHeader>
 
@@ -64,7 +64,12 @@ const Cart = () => {
             </SheetFooter>
           </div>
         </>
-      ) : (<div></div>)}
+      ) : (
+        // if itemcount is 0, render image in place of cart
+      <div>
+        
+      </div>
+    )}
     </SheetContent>
     
   </Sheet>
